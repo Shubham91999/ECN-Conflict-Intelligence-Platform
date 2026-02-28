@@ -1,0 +1,103 @@
+[
+  {
+    "ecn_id": "ECN-2024-089",
+    "title": "Qualify FI-2024 as Sole-Source Injector for EP-V8 MY2025",
+    "description": "Formal qualification of FI-2024 as the only approved fuel injector for EP-V8 program across all MY2025 configurations following competitive supplier audit.",
+    "parts_affected": ["FI-2024"],
+    "program": "EP-V8",
+    "model_year": "MY2025",
+    "effective_date": "2024-01-15",
+    "status": "APPROVED",
+    "outcome": {
+      "action": "APPROVED",
+      "part": "FI-2024",
+      "status": "sole_supplier",
+      "note": "FI-2024 designated sole-source; alternative injectors require full re-qualification before use in EP-V8/MY2025"
+    },
+    "requires_rollback_if_reversed": true,
+    "rollback_steps": [
+      "Submit Supplier Change Request (SCR) to Purchasing",
+      "Conduct PPAP Level 3 for replacement part",
+      "Obtain sign-off from Quality and Release Engineering"
+    ]
+  },
+  {
+    "ecn_id": "ECN-2023-441",
+    "title": "Corrective Action - FI-2027 Tip Coking in EP-V6 Pilot",
+    "description": "Identified injector tip coking in FI-2027 during EP-V6 high-cycle thermal endurance testing. Change: FI-2027 flagged for additional durability validation before production use.",
+    "parts_affected": ["FI-2027"],
+    "program": "EP-V6",
+    "model_year": "MY2024",
+    "effective_date": "2023-08-22",
+    "status": "RESOLVED_WITH_FLAG",
+    "outcome": {
+      "action": "FLAGGED",
+      "part": "FI-2027",
+      "status": "conditional_use",
+      "note": "FI-2027 may be used only after 50K-mile durability confirmation per CA-2022-441"
+    },
+    "requires_rollback_if_reversed": false
+  },
+  {
+    "ecn_id": "ECN-2024-102",
+    "title": "Update FP-38 Pressure Rating Documentation",
+    "description": "Administrative update to FP-38 spec sheet to reflect 250 bar verified operating pressure (previously listed as 275 bar in error).",
+    "parts_affected": ["FP-38"],
+    "program": "EP-V8",
+    "model_year": "MY2025",
+    "effective_date": "2024-03-10",
+    "status": "APPROVED",
+    "outcome": {
+      "action": "SPEC_UPDATE",
+      "part": "FP-38",
+      "status": "updated",
+      "note": "Pressure rating corrected to 250 bar; incompatible with injectors requiring >300 bar supply pressure"
+    },
+    "requires_rollback_if_reversed": false
+  },
+  {
+    "ecn_id": "ECN-2023-201",
+    "title": "Certify EC-501 as Sole-Approved ECU for EP-V8 MY2024",
+    "description": "Following supplier consolidation, EC-501 certified as the only approved ECU for EP-V8/MY2024. All alternative ECU modules require full re-validation against EP-V8 calibration baseline before production use.",
+    "parts_affected": ["EC-501"],
+    "program": "EP-V8",
+    "model_year": "MY2024",
+    "effective_date": "2023-04-10",
+    "status": "APPROVED",
+    "outcome": {
+      "action": "APPROVED",
+      "part": "EC-501",
+      "status": "sole_supplier",
+      "note": "EC-501 is the only ECU certified for EP-V8/MY2024; replacement requires full PPAP Level 3 and calibration re-validation"
+    },
+    "requires_rollback_if_reversed": true,
+    "rollback_steps": [
+      "Obtain ECU Supplier Change Approval (SCA) from Powertrain Engineering",
+      "Conduct full ECU calibration re-baseline for replacement unit",
+      "Complete PPAP Level 3 and OBD-II compliance re-certification",
+      "Obtain sign-off from Vehicle Integration and Quality Engineering"
+    ]
+  },
+  {
+    "ecn_id": "ECN-2024-315",
+    "title": "Validate SC-012 Cold-Start Calibration for EP-I4 MY2025",
+    "description": "SC-012 sensor cluster completed extended cold-start calibration validation for EP-I4/MY2025. Approved as calibrated baseline sensor. Any replacement sensor must match or exceed the validated calibration envelope.",
+    "parts_affected": ["SC-012"],
+    "program": "EP-I4",
+    "model_year": "MY2025",
+    "effective_date": "2024-07-20",
+    "status": "APPROVED",
+    "outcome": {
+      "action": "APPROVED",
+      "part": "SC-012",
+      "status": "calibrated_baseline",
+      "note": "SC-012 is the validated cold-start calibration baseline for EP-I4/MY2025; replacement sensors must complete equivalent cold-start validation"
+    },
+    "requires_rollback_if_reversed": true,
+    "rollback_steps": [
+      "Submit Sensor Change Request (SCR) to Calibration Engineering",
+      "Conduct equivalent cold-start validation (-30°C to +40°C) for replacement sensor",
+      "Obtain OBD-II and emissions compliance sign-off"
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "EP-V8",
+    "name": "V8 Turbo Engine Program",
+    "displacement": "5.0L",
+    "model_years": ["MY2024", "MY2025"],
+    "freeze_dates": {
+      "MY2024": "2023-06-01",
+      "MY2025": "2024-06-01"
+    },
+    "job1_dates": {
+      "MY2024": "2023-09-01",
+      "MY2025": "2024-09-01"
+    },
+    "options": ["OPT-HP", "OPT-TW", "OPT-BS", "OPT-EC", "OPT-EV"],
+    "applicability": {
+      "MY2024": ["OPT-HP", "OPT-TW", "OPT-BS", "OPT-EC", "OPT-EV"],
+      "MY2025": ["OPT-HP", "OPT-TW", "OPT-BS", "OPT-EC", "OPT-EV"]
+    }
+  },
+  {
+    "id": "EP-V6",
+    "name": "V6 Naturally Aspirated Engine Program",
+    "displacement": "3.5L",
+    "model_years": ["MY2024", "MY2025"],
+    "freeze_dates": {
+      "MY2024": "2023-07-01",
+      "MY2025": "2024-07-01"
+    },
+    "job1_dates": {
+      "MY2024": "2023-10-01",
+      "MY2025": "2024-10-01"
+    },
+    "options": ["OPT-EC", "OPT-BS", "OPT-EV"],
+    "applicability": {
+      "MY2024": ["OPT-EC", "OPT-BS", "OPT-EV"],
+      "MY2025": ["OPT-EC", "OPT-BS", "OPT-EV"]
+    }
+  },
+  {
+    "id": "EP-I4",
+    "name": "I4 Hybrid Engine Program",
+    "displacement": "2.0L",
+    "model_years": ["MY2025"],
+    "freeze_dates": {
+      "MY2025": "2024-10-01"
+    },
+    "job1_dates": {
+      "MY2025": "2025-01-01"
+    },
+    "options": ["OPT-EC", "OPT-EV", "OPT-BS"],
+    "applicability": {
+      "MY2025": ["OPT-EC", "OPT-EV", "OPT-BS"]
+    }
+  }
+]

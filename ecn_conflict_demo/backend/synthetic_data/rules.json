@@ -1,0 +1,110 @@
+[
+  {
+    "id": "R-001",
+    "type": "do_not_coexist",
+    "severity": "HIGH",
+    "description": "FI-2027 and FA-112 cannot coexist in the same engine program. FI-2027's extended tip geometry physically interferes with FA-112's rail bracket clearance.",
+    "parts": ["FI-2027", "FA-112"],
+    "programs": ["EP-V8"],
+    "artifact_link": "rules://R-001",
+    "source": "Packaging Engineering Review PER-2023-07"
+  },
+  {
+    "id": "R-002",
+    "type": "freeze_window",
+    "severity": "HIGH",
+    "description": "EP-V8 / MY2025 entered release freeze on 2024-06-01. No part substitutions are permitted within 90 days of Job-1 (2024-09-01) without a formal derogation.",
+    "program": "EP-V8",
+    "model_year": "MY2025",
+    "freeze_date": "2024-06-01",
+    "job1_date": "2024-09-01",
+    "artifact_link": "rules://R-002",
+    "source": "Program Release Gate PG-V8-MY25"
+  },
+  {
+    "id": "R-003",
+    "type": "dependency",
+    "severity": "MEDIUM",
+    "description": "FI-2027 requires Fuel Pump FP-44 (high-pressure variant, 350 bar) for correct fuel delivery. EP-V8 currently uses FP-38 (standard pressure, 250 bar), which is incompatible.",
+    "part": "FI-2027",
+    "requires": "FP-44",
+    "conflicts_with": "FP-38",
+    "programs": ["EP-V8"],
+    "artifact_link": "rules://R-003",
+    "source": "Fuel System Integration Spec FSIS-2024-12"
+  },
+  {
+    "id": "R-004",
+    "type": "historical_flag",
+    "severity": "MEDIUM",
+    "description": "FI-2027 was subject to Corrective Action CA-2022-441 in EP-V6 pilot due to injector tip coking at high-cycle thermal loads. CA resolved but flag retained pending 50K-mile durability confirmation.",
+    "part": "FI-2027",
+    "corrective_action_id": "CA-2022-441",
+    "artifact_link": "ca://CA-2022-441",
+    "source": "Quality Engineering Record QER-V6-2022"
+  },
+  {
+    "id": "R-005",
+    "type": "freeze_window",
+    "severity": "HIGH",
+    "description": "EP-V8 / MY2024 entered release freeze on 2023-06-01. This program year has already passed Job-1 and is in production. Any changes require a formal Production Part Approval Process (PPAP) and engineering sign-off.",
+    "program": "EP-V8",
+    "model_year": "MY2024",
+    "freeze_date": "2023-06-01",
+    "job1_date": "2023-09-01",
+    "artifact_link": "rules://R-005",
+    "source": "Program Release Gate PG-V8-MY24"
+  },
+  {
+    "id": "R-006",
+    "type": "dependency",
+    "severity": "HIGH",
+    "description": "EC-505 Next-Gen ECU requires high-density Wiring Harness WH-088 to support its expanded 128-pin connector array. EP-V8 currently uses WH-077 (64-pin), which is electrically and physically incompatible with EC-505.",
+    "part": "EC-505",
+    "requires": "WH-088",
+    "conflicts_with": "WH-077",
+    "programs": ["EP-V8", "EP-V6"],
+    "artifact_link": "rules://R-006",
+    "source": "ECU Integration Design Guide EIDG-2024-03"
+  },
+  {
+    "id": "R-007",
+    "type": "do_not_coexist",
+    "severity": "MEDIUM",
+    "description": "EX-203 Lite manifold uses a 6-bolt flange pattern designed for the V8 cylinder block (CB-015). It is dimensionally incompatible with the V6 cylinder block CB-016, which uses a 4-bolt offset flange.",
+    "parts": ["EX-203", "CB-016"],
+    "programs": ["EP-V6"],
+    "artifact_link": "rules://R-007",
+    "source": "Exhaust Packaging Study EPS-2024-09"
+  },
+  {
+    "id": "R-008",
+    "type": "historical_flag",
+    "severity": "MEDIUM",
+    "description": "EX-203 Lite manifold exhibited thermal warping (>0.3mm) at sustained high-load conditions during EP-V6 bench testing in 2024. Issue logged under Corrective Action CA-2024-118. Full durability validation not yet complete.",
+    "part": "EX-203",
+    "corrective_action_id": "CA-2024-118",
+    "artifact_link": "ca://CA-2024-118",
+    "source": "Thermal Durability Report TDR-V6-2024"
+  },
+  {
+    "id": "R-009",
+    "type": "do_not_coexist",
+    "severity": "MEDIUM",
+    "description": "SC-015 Gen2 sensor cluster uses a broadband RF emission profile that causes interference with TH-302's position sensor in the EP-I4 intake cavity. The two parts cannot operate reliably together in the EP-I4 packaging envelope.",
+    "parts": ["SC-015", "TH-302"],
+    "programs": ["EP-I4"],
+    "artifact_link": "rules://R-009",
+    "source": "EMC Compatibility Study EMCS-2024-14"
+  },
+  {
+    "id": "R-010",
+    "type": "historical_flag",
+    "severity": "MEDIUM",
+    "description": "SC-015 Gen2 exhibited calibration drift of ±4% at cold-start temperatures below -15°C during EP-I4 validation testing. Logged under Corrective Action CA-2024-207. Approved for warm-climate programs only pending cold-weather re-validation.",
+    "part": "SC-015",
+    "corrective_action_id": "CA-2024-207",
+    "artifact_link": "ca://CA-2024-207",
+    "source": "Sensor Validation Report SVR-I4-2024"
+  }
+]

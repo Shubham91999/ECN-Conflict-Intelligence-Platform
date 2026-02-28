@@ -1,0 +1,22 @@
+[
+  {"program": "EP-V8", "model_year": "MY2025", "option": "OPT-HP", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2025", "option": "OPT-TW", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2025", "option": "OPT-BS", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2025", "option": "OPT-EC", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2025", "option": "OPT-EV", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2024", "option": "OPT-HP", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2024", "option": "OPT-TW", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2024", "option": "OPT-BS", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2024", "option": "OPT-EC", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V8", "model_year": "MY2024", "option": "OPT-EV", "parts": ["FI-2024", "FA-112", "FP-38", "CR-221", "CB-015", "EX-201", "EC-501", "SC-011", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2025", "option": "OPT-EC", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2025", "option": "OPT-BS", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2025", "option": "OPT-EV", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2025", "option": "OPT-HP", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2024", "option": "OPT-EC", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "VT-101", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2024", "option": "OPT-BS", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-V6", "model_year": "MY2024", "option": "OPT-EV", "parts": ["FI-2024", "FP-38", "CB-016", "EX-202", "EC-502", "SC-012", "TH-301", "WH-077", "IG-441"]},
+  {"program": "EP-I4", "model_year": "MY2025", "option": "OPT-EC", "parts": ["CB-017", "EX-202", "EC-503", "SC-012", "TH-302", "IG-441"]},
+  {"program": "EP-I4", "model_year": "MY2025", "option": "OPT-EV", "parts": ["CB-017", "EX-202", "EC-503", "SC-012", "TH-302", "IG-441"]},
+  {"program": "EP-I4", "model_year": "MY2025", "option": "OPT-BS", "parts": ["CB-017", "EX-202", "EC-503", "SC-012", "TH-302", "IG-441"]}
+]

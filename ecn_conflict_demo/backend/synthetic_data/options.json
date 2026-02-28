@@ -1,0 +1,7 @@
+[
+  {"id": "OPT-HP", "name": "High Performance", "code": "HP", "description": "Sport-tuned, max output configuration"},
+  {"id": "OPT-EC", "name": "Economy",          "code": "EC", "description": "Fuel-efficiency optimized configuration"},
+  {"id": "OPT-TW", "name": "Towing",           "code": "TW", "description": "Heavy-duty towing and torque configuration"},
+  {"id": "OPT-EV", "name": "Eco",              "code": "EV", "description": "Low-emission, hybrid-ready configuration"},
+  {"id": "OPT-BS", "name": "Base",             "code": "BS", "description": "Standard production configuration"}
+]

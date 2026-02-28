@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ASM-FUEL-V8",
+    "name": "V8 Fuel System Assembly",
+    "program": "EP-V8",
+    "parts": ["FI-2024", "FA-112", "FP-38", "CR-221"],
+    "edges": [
+      {"from": "FI-2024", "to": "FA-112", "type": "part-of"},
+      {"from": "FP-38",   "to": "FA-112", "type": "feeds"},
+      {"from": "FA-112",  "to": "CR-221", "type": "connects-to"}
+    ]
+  },
+  {
+    "id": "ASM-FUEL-V6",
+    "name": "V6 Fuel System Assembly",
+    "program": "EP-V6",
+    "parts": ["FI-2024", "FP-38"],
+    "edges": [
+      {"from": "FI-2024", "to": "FP-38", "type": "requires"}
+    ]
+  },
+  {
+    "id": "ASM-EXHAUST-V8",
+    "name": "V8 Exhaust Assembly",
+    "program": "EP-V8",
+    "parts": ["EX-201", "CB-015"],
+    "edges": [
+      {"from": "EX-201", "to": "CB-015", "type": "mounts-to"}
+    ]
+  },
+  {
+    "id": "ASM-EXHAUST-V6",
+    "name": "V6 Exhaust Assembly",
+    "program": "EP-V6",
+    "parts": ["EX-202", "CB-016"],
+    "edges": [
+      {"from": "EX-202", "to": "CB-016", "type": "mounts-to"}
+    ]
+  },
+  {
+    "id": "ASM-EXHAUST-I4",
+    "name": "I4 Exhaust Assembly",
+    "program": "EP-I4",
+    "parts": ["EX-202", "CB-017"],
+    "edges": [
+      {"from": "EX-202", "to": "CB-017", "type": "mounts-to"}
+    ]
+  },
+  {
+    "id": "ASM-CONTROLS-V8",
+    "name": "V8 Engine Controls",
+    "program": "EP-V8",
+    "parts": ["EC-501", "SC-011", "TH-301", "VT-101"],
+    "edges": [
+      {"from": "SC-011", "to": "EC-501", "type": "signals"},
+      {"from": "TH-301", "to": "EC-501", "type": "signals"},
+      {"from": "VT-101", "to": "EC-501", "type": "controlled-by"}
+    ]
+  },
+  {
+    "id": "ASM-CONTROLS-V6",
+    "name": "V6 Engine Controls",
+    "program": "EP-V6",
+    "parts": ["EC-502", "SC-012", "TH-301", "VT-101"],
+    "edges": [
+      {"from": "SC-012", "to": "EC-502", "type": "signals"},
+      {"from": "TH-301", "to": "EC-502", "type": "signals"}
+    ]
+  },
+  {
+    "id": "ASM-CONTROLS-I4",
+    "name": "I4 Engine Controls",
+    "program": "EP-I4",
+    "parts": ["EC-503", "SC-012", "TH-302"],
+    "edges": [
+      {"from": "SC-012", "to": "EC-503", "type": "signals"},
+      {"from": "TH-302", "to": "EC-503", "type": "signals"}
+    ]
+  },
+  {
+    "id": "ASM-IGNITION-V8",
+    "name": "V8 Ignition Assembly",
+    "program": "EP-V8",
+    "parts": ["IG-441", "EC-501"],
+    "edges": [
+      {"from": "IG-441", "to": "EC-501", "type": "controlled-by"}
+    ]
+  },
+  {
+    "id": "ASM-IGNITION-I4",
+    "name": "I4 Ignition Assembly",
+    "program": "EP-I4",
+    "parts": ["IG-441", "EC-503"],
+    "edges": [
+      {"from": "IG-441", "to": "EC-503", "type": "controlled-by"}
+    ]
+  }
+]
